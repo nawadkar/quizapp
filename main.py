@@ -103,7 +103,7 @@ def main():
 
     # Loading the openai_api_key from the .env which is required for creating quiz chain
     load_dotenv()
-    openai_api_key = "sk-proj-KY8LxruyHMw3q3VELa9yT3BlbkFJAThNPf4dodDB8fCAixjH"
+    openai_api_key = os.getenv("OPENAI_API_KEY")
     prompt_template = create_the_quiz_prompt_template()
     if openai_api_key != "":
         os.environ["OPENAI_API_KEY"] = openai_api_key
