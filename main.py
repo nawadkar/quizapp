@@ -105,7 +105,7 @@ def main():
     openai_api_key = st.secrets["OPENAI_API_KEY"]
     prompt_template = create_the_quiz_prompt_template()
     if openai_api_key != "":
-        st.secrets["OPENAI_API_KEY"] = openai_api_key
+        os.environ["OPENAI_API_KEY"] = openai_api_key
     else:
         st.error("OpenAI API key error.")
 
