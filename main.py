@@ -102,10 +102,10 @@ def parse_file(file):
 def main():
 
     # Loading the openai_api_key from the .env which is required for creating quiz chain
-    openai_api_key = OPENAI_API_KEY
+    openai_api_key = "OPENAI_API_KEY"
     prompt_template = create_the_quiz_prompt_template()
     if openai_api_key != "":
-        OPENAI_API_KEY = openai_api_key
+        "OPENAI_API_KEY" = openai_api_key
     else:
         st.error("OpenAI API key error.")
 
