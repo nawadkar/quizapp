@@ -1,4 +1,4 @@
-# Q-A-generator
+# Quiz-generator
 Generates Questions and there Answers from PDF input. Types of questions: MCQ, True-False, One-Word
 
 Created a Quiz Generation tool using input data as PDF, PyPDF2 is used to parse the PDFs, GPT 3.5 Turbo LLM model, Langchain, deployed on Streamlit Share.
